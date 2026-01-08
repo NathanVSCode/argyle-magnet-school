@@ -6,6 +6,7 @@ import Footer from './Footer';
 import ParticleEffects from './ParticleEffects';
 
 const Layout = () => {
+    console.log('📄 LAYOUT COMPONENT RENDERING');
     return (
         <div className="min-h-screen bg-slate-950 text-white selection:bg-argyle-purple selection:text-white overflow-x-hidden">
             <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-10 pointer-events-none" />

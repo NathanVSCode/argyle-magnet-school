@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Home = () => {
+    console.log('🏠 HOME COMPONENT RENDERING');
     // Animation Variants
     const containerVariants = {
         hidden: { opacity: 0 },

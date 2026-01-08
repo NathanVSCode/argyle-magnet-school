@@ -33,11 +33,7 @@ function AppContent() {
         <AnimatePresence mode="wait" initial={false}>
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Layout />}>
-                    <Route index element={
-                        <PageTransition mode="fade">
-                            <Home />
-                        </PageTransition>
-                    } />
+                    <Route index element={<Home />} />
                     <Route path="staff" element={
                         <PageTransition mode="fade">
                             <Staff />
@@ -130,6 +126,7 @@ function AppContent() {
 }
 
 function App() {
+    console.log('🚀 APP COMPONENT RENDERING');
     return (
         <ErrorBoundary>
             <ThemeProvider defaultTheme="light">
